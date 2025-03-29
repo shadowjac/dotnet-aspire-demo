@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Sdk Name="Aspire.AppHost.Sdk" Version="9.1.0" />
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<IsAspireHost>true</IsAspireHost>
+		<UserSecretsId>1939ec4d-b34b-45a8-8fd6-c064b73cd393</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Aspire.Hosting.AppHost" Version="9.1.0" />
+		<PackageReference Include="Aspire.Hosting.MongoDB" Version="9.1.0" />
+		<PackageReference Include="Aspire.Hosting.RabbitMQ" Version="9.1.0" />
+		<PackageReference Include="Aspire.Hosting.Redis" Version="9.1.0" />
+		<PackageReference Include="Aspire.Hosting.SqlServer" Version="9.1.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Globant.AspireDemo.Api\Globant.AspireDemo.Api.csproj" />
+	  <ProjectReference Include="..\Globant.AspireDemo.Worker\Globant.AspireDemo.Worker.csproj" />
+	</ItemGroup>
+
+</Project>

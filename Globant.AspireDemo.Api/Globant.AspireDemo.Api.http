@@ -1,0 +1,6 @@
+@Globant.AspireDemo.Api_HostAddress = http://localhost:5032
+
+GET {{Globant.AspireDemo.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
